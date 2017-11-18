@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Train Schedule</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>TRAIN SCHEDULE</h1>
+        </div>
+        <!--  Train Schedule -->
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Current Train Schedule</h3>
+            </div>
+
+
+            <!-- Table -->
+                        <table class="table">
+                        	<tr>
+                        		<th>Train Time</th>
+                        		<th>Destination</th>
+                        		<th>Frequency (min)</th>
+                        		<th>Next Arrival</th>
+                        		<th>Minutes Away</th>
+                        	</tr>
+                         <tr>
+                     		<td id="timeDisplay"></td>
+                     		<td id="destinationDisplay"></td>
+                     		<td id="freqDisplay"></td>
+                     		<td id="arrivalDisplay"></td>
+                     		<td id="awayDisplay"></td>
+
+                        </table>
+
+            </div>
+       
+        <!-- Add train  -->
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Current Train Schedule</h3>
+            </div>
+
+            <div class="panel-body">
+                <label>Train Name</label>
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control" id="train" aria-describedby="basic-addon1">
+                </div>
+            </div>
+				<div class="panel-body">
+                <label>Destination</label>
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon1">
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <label>First Train Time (HH:mm - military time</label>
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon1">
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <label>Frequency (min)</label>
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon1">
+                </div>
+            </div>
+
+
+
+                <!-- Button -->
+                 <div class="panel-body">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+     </div>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Moment JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script>
+    <!-- Javascript -->
+    <script type="text/javascript" src="schedule.js"></script>
+    <!-- Firebase -->
+    
+
+
+</body>
+
+</html>
