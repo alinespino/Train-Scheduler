@@ -4,15 +4,45 @@
 <head>
     <meta charset="utf-8">
     <title>Train Schedule</title>
-
+    <!-- Bootstrap cdn -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
+     <!-- Bootswatch -->
+     <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/journal/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    </head>
 
 <body>
     <div class="container">
-        <div class="jumbotron">
-            <h1>TRAIN SCHEDULE</h1>
-        </div>
+            <div class="jumbotron">
+            
+
+            <div id="trainCarousel" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="null">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="assets/images/train1.jpg" alt="Welcome">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/train2.jpg" alt="Ajja">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/train3.jpg" alt="perks">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 panel panel-heading">
+                        <h3 class="panel-title" id="h1">TRAIN SCHEDULE </h3>
+                    </div>
+
+        
         <!--  Train Schedule -->
         <div class="panel panel-info">
             <div class="panel-heading">
@@ -67,14 +97,17 @@
             <!-- Button -->
             <div class="panel-body">
                 <div class="btn-group" role="group" aria-label="...">
-                    <button type="submit" class="btn btn-default" id="sub-btn">Submit</button>
+                    <button type="submit" class="btn" id="sub-btn">Submit</button>
                 </div>
             </div>
         </div>
     </div>
     </div>
+    </div>
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Moment JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script>
     <!-- Javascript -->

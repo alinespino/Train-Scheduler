@@ -108,7 +108,7 @@ console.log(firstTrain);
     var nextArr = moment().add(minsAway, "minutes");
     console.log("ARRIVAL TIME: " + moment(nextArr).format("hh:mm"));
 
-    var newNextArr = moment(nextArr).format("hh:mm");
+    var newNextArr = moment(nextArr).format("HH:mm");
 
 
 //Display data //
